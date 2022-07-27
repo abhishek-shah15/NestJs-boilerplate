@@ -70,7 +70,7 @@ export class AuthService {
     if (!user) {
       throw new UnauthorizedException();
     }
-    return this.createJwtPayload(user);
+    return user;
   }
 
   protected createJwtPayload(user) {
